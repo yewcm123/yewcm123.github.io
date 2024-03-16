@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import Button from "../features/ui/button";
+import hero_img from "../assets/hero.jpg";
 
 function Home() {
     const redirect = (url: string) => {
@@ -14,22 +15,29 @@ function Home() {
             <div className="slides page-1">
                 <div className="content">
                     <div className="hero">
-                        <div>
+                        <div className="headline-container">
                             <h1 className="headline">
                                 Hello! I’m{" "}
                                 <span className="highlight">Derrick</span>, a
                                 developer from Malaysia.
                             </h1>
-                            <p className="text">
-                                I love building tools that are user-friendly,
-                                simple and delightful. I am a self-learned
-                                developer who does{" "}
-                                <span className="highlight">full-stack</span>. I
-                                had the opportunity to work with both large and
-                                small, specialized and cross-functional teams
-                                and developed a working style that leans towards
-                                flexibility, clarity and collaboration
-                            </p>
+                            <div className="text">
+                                <p>
+                                    I love building tools that are
+                                    user-friendly, simple and delightful.
+                                </p>
+                                <p>
+                                    I am a self-learned developer who does{" "}
+                                    <span className="highlight">
+                                        full-stack
+                                    </span>
+                                    . I had the opportunity to work with both
+                                    large and small, specialized and
+                                    cross-functional teams and developed a
+                                    working style that leans towards
+                                    flexibility, clarity and collaboration
+                                </p>
+                            </div>
                             <div className="button-set">
                                 <Button
                                     onClick={() => {
@@ -44,7 +52,15 @@ function Home() {
                             </div>
                         </div>
 
-                        <div className="col-span-1 hero-image">asd</div>
+                        <div className="col-span-1 hero-image">
+                            <div style={{ width: "100%" }}>
+                                <img
+                                    src={hero_img}
+                                    alt="hero image"
+                                    className="hero-img"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

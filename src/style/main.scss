@@ -61,6 +61,15 @@ header {
     right: 0;
 }
 
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
 .nav-bar {
     @include max-width;
     position: -webkit-sticky; /* Safari */
@@ -95,9 +104,10 @@ header {
     justify-content: center;
     gap: 50px;
     &.page-1 {
-        height: 70vh !important;
+        height: 88vh !important;
         background-color: $baby-powder;
         .content {
+            margin-top: 10vh;
             @include max-width;
         }
     }
@@ -121,11 +131,17 @@ header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     color: $dark-blue;
-    .headline{
+    gap: 3rem;
+    .headline-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .headline {
         font-size: 3.2em;
         line-height: 1.1;
     }
     .text {
+        flex-grow: 1;
         color: $light-blue;
         font-size: 1.3em;
     }
@@ -133,11 +149,18 @@ header {
         color: $dark-sand;
     }
     .button-set {
+        
         display: flex;
         gap: 1rem;
     }
+}
 
-
+.hero-img {
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 40% 60%;
+    width: 100%;
+    max-height: 48vh;
 }
 
 .card {
