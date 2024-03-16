@@ -48,11 +48,6 @@ a {
     }
 }
 
-// h1 {
-//     font-size: 3.2em;
-//     line-height: 1.1;
-// }
-
 li {
     list-style-type: none;
 }
@@ -63,7 +58,8 @@ li {
     position: sticky;
     display: flex;
     justify-content: space-between;
-    margin: 2.5rem auto;
+    margin: 0 auto;
+    padding: 2.5rem 0;
 }
 
 .nav-item-list {

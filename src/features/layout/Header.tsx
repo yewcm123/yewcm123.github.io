@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <>
+        <header>
             <nav className="nav-bar">
                 <div className ="">
                     <a className="logo-title" href="/">
@@ -28,7 +28,7 @@ const Header = () => {
                     </ul>
                 </div>
             </nav>
-        </>
+        </header>
     );
 };
 
