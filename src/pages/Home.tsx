@@ -1,5 +1,3 @@
-import { useNavigate } from "react-router-dom";
-import { Navigate } from "react-router-dom";
 import Button from "../features/ui/button";
 import hero_img from "../assets/hero.jpg";
 
