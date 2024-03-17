@@ -53,12 +53,38 @@ li {
 }
 
 header {
-    @include max-width;
     margin: 0 auto;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    &.page-1 {
+        background-color: $baby-powder;
+        .logo-title{
+            color: $dark-blue !important;
+        }
+        .nav-item {
+            color: $dark-blue;
+        }
+    }
+    &.page-2 {
+        background-color: $dark-blue;
+        .logo-title{
+            color: $baby-powder !important;
+        }
+        .nav-item {
+            color: $baby-powder;
+        }
+    }
+    &.page-3 {
+        background-color: $light-sand;
+        .logo-title{
+            color: $dark-blue !important;
+        }
+        .nav-item {
+            color: $dark-blue;
+        }
+    }
 }
 
 img {
@@ -66,7 +92,12 @@ img {
     max-width: 100%;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -149,7 +180,6 @@ h1,h2,h3,h4,h5,h6 {
         color: $dark-sand;
     }
     .button-set {
-        
         display: flex;
         gap: 1rem;
     }
