@@ -12,10 +12,15 @@ $baby-powder: #fbf9fe;
     max-width: 1200px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     font-family: Outfit, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
+    box-sizing: border-box;
 
     color-scheme: light;
 
@@ -60,7 +65,7 @@ header {
     right: 0;
     &.page-1 {
         background-color: $baby-powder;
-        .logo-title{
+        .logo-title {
             color: $dark-blue !important;
         }
         .nav-item {
@@ -69,7 +74,7 @@ header {
     }
     &.page-2 {
         background-color: $dark-blue;
-        .logo-title{
+        .logo-title {
             color: $baby-powder !important;
         }
         .nav-item {
@@ -78,7 +83,7 @@ header {
     }
     &.page-3 {
         background-color: $light-sand;
-        .logo-title{
+        .logo-title {
             color: $dark-blue !important;
         }
         .nav-item {
@@ -185,16 +190,58 @@ h6 {
     }
 }
 
-.hero-img {
+.img-container {
+    width: 100%;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.hero-img {
     object-fit: cover;
     object-position: 40% 60%;
+    border-radius: 10px;
     width: 100%;
     max-height: 48vh;
+    border-radius: 10px;
+    padding: 6px;
+    background: radial-gradient(
+                circle at 100% 100%,
+                #ffffff 0,
+                #ffffff 4px,
+                transparent 4px
+            )
+            0% 0%/10px 10px no-repeat,
+        radial-gradient(
+                circle at 0 100%,
+                #ffffff 0,
+                #ffffff 4px,
+                transparent 4px
+            )
+            100% 0%/10px 10px no-repeat,
+        radial-gradient(
+                circle at 100% 0,
+                #ffffff 0,
+                #ffffff 4px,
+                transparent 4px
+            )
+            0% 100%/10px 10px no-repeat,
+        radial-gradient(circle at 0 0, #ffffff 0, #ffffff 4px, transparent 4px)
+            100% 100%/10px 10px no-repeat,
+        linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 12px)
+            calc(100% - 20px) no-repeat,
+        linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 20px)
+            calc(100% - 12px) no-repeat,
+        linear-gradient(132deg, #eca643 0%, #2d5be4 100%);
 }
 
 .card {
     padding: 2em;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 30px 30px 31px -7px rgba(189, 189, 189, 0.7);
+    -moz-box-shadow: 30px 30px 31px -7px rgba(189, 189, 189, 0.7);
+    box-shadow: 30px 30px 31px -7px rgba(189, 189, 189, 0.7);
 }
 
 button {

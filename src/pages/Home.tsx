@@ -53,13 +53,11 @@ function Home() {
                         </div>
 
                         <div className="col-span-1 hero-image">
-                            <div style={{ width: "100%" }}>
-                                <img
-                                    src={hero_img}
-                                    alt="hero image"
-                                    className="hero-img"
-                                />
-                            </div>
+                            <img
+                                src={hero_img}
+                                alt="hero image"
+                                className="hero-img box-shadow"
+                            />
                         </div>
                     </div>
                 </div>
