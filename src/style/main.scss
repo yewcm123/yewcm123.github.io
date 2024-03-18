@@ -246,21 +246,35 @@ h6 {
 
 button {
     border-radius: 5px;
-    border: none;
     padding: 0.6em 1.2em;
-    font-size: 1em;
+    font-size: 1.4em;
     font-weight: regular;
     font-family: inherit;
-    background-color: $dark-blue;
     cursor: pointer;
-    transition: border-color 0.25s;
-}
-button:hover {
-    background-color: $light-blue;
-}
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+    transition: border-color 0.1s;
+    &.contained {
+        background-color: $dark-blue;
+        color: $baby-powder;
+        border: none;
+        &:hover {
+            background-color: $light-blue;
+        }
+        &:focus,
+        &:focus-visible {
+            outline: 4px auto $dark-sand;
+        }
+    }
+    &.outlined {
+        border: $dark-sand 2px solid;
+        color: $dark-blue;
+        &:hover {
+            background-color: $light-sand;
+        }
+        &:focus,
+        &:focus-visible {
+            outline: 1rem auto $light-blue;
+        }
+    }
 }
 
 @media (prefers-color-scheme: light) {

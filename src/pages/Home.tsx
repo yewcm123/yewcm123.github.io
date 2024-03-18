@@ -38,13 +38,17 @@ function Home() {
                             </div>
                             <div className="button-set">
                                 <Button
+                                    variant="contained"
                                     onClick={() => {
                                         redirect(linkedin_url);
                                     }}
                                 >
                                     View Linkedin
                                 </Button>
-                                <Button onClick={() => redirect(github_url)}>
+                                <Button
+                                    variant="outlined"
+                                    onClick={() => redirect(github_url)}
+                                >
                                     View Github
                                 </Button>
                             </div>
