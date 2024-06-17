@@ -1,7 +1,6 @@
 import React from 'react';
 import { Outlet, RouteProps } from 'react-router-dom';
-import Footer from '../features/layout/Footer';
-import Header from '../features/layout/Header';
+import Header from './Header';
 
 const Layout: React.FC<RouteProps> = () => {
   return (

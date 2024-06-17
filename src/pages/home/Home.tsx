@@ -1,6 +1,6 @@
-import ContactMe from './ContactMe';
-import Experience from './Experience';
-import Hero from './Hero';
+import ContactMe from '../contactMe/ContactMe';
+import Experience from '../experience/Experience';
+import Hero from '../hero/Hero';
 
 function Home() {
   return (

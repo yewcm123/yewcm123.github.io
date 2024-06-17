@@ -1,5 +1,5 @@
-import Button from '../features/ui/button';
-import hero_img from '../assets/hero.jpg';
+import Button from '../../components/global/button';
+import hero_img from '../../assets/hero.jpg';
 
 const Hero = () => {
   const redirect = (url: string) => {
